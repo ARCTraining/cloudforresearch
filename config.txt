@@ -1,0 +1,29 @@
+# Microsoft Genomics service - Command Line Interface - Configuration File
+#
+# Documentation: https://msgen.readthedocs.io/en/latest/
+#
+# Instructions
+# 1.  Entries are provided in key - value pairs, like key: value
+# 2.  Whitespace (tabs, spaces) don't matter
+# 3.  Lines starting with # are ignored
+#
+# Example usage:
+#
+# pip install msgen
+# msgen submit -f c:\temp\config.txt -b1 sample_1.fq.gz -b2 sample_2.fq.gz
+# msgen submit -f c:\temp\config.txt -b1 sample.bam
+
+api_url_base:                        https://westus2.microsoftgenomics.net
+access_key:                          7a464a89fe324049adfef7736dc86f27
+
+# Other available references (replace hg19m1 below): b37m1, hg19m1, hg38m1, hg38m1x
+process_args:                        R=hg19m1
+
+poll:                                false
+
+input_storage_account_name:          
+input_storage_account_key:           
+input_storage_account_container:     
+output_storage_account_name:         
+output_storage_account_key:          
+output_storage_account_container:    
